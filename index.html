@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Recrutement
+  </title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <noscript><h1>The site is not working !</h1></noscript>
+  <script src="script.js"></script>
+  <div class="candidature">
+    <h1>Recrutement</h1>
+    <form>
+      <label>Nom de famille (optionel)</label>
+      <input type="text" id="nom" name="firstname" placeholder="Ton nom de famille..">
+      <label>Prénom</label>
+      <input type="text" id="prenom" name="lastname" placeholder="Ton prénom..">
+      <label>Age</label>
+      <input type="text" id="age" placeholder="Ton age...">
+      <label>Pseudo discord</label>
+      <input type="text" id="pseudo" placeholder="Ton pseudo discord...">
+      <label>Le poste que tu souhaite</label>
+      <select id="poste">
+        <option value="animateur">Animateur</option>
+        <option value="dev">Developer</option>
+        <option value="modo">Modérateur</option>
+        <option value="admin">Administrateur</option>
+        <option value="pubeur">Pubeur</option>
+      </select>
+      <label>Ton experience</label>
+      <input type="text" id="experience" placeholder="Ton experience...">
+      <label>Pourquoi toi?</label>
+      <input type="text" id="choose" placeholder="Pourquoi devrait-on te choisir toi ?">
+      <label>Pourquoi peut-on te faire confiance?</label>
+      <input type="text" id="confiance" placeholder="Pourquoi peut-on te faire confiance?">
+      <button type="button" onclick="reset()">Reset</button>
+      <button type="button" onclick="sendcandid()">Envoyer</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
